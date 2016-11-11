@@ -15,7 +15,7 @@
  */
 var async = require("async");
 var request = require("request");
-var googleApiKey = "AIzaSyAGdvJzOnWFhkp9zf13y_SAU1sgNNteGQE";
+var googleApiKey = "Enter your API key here";
 var googleApiGeocode = "https://maps.googleapis.com/maps/api/geocode/json";
 var googleApiTimezone = "https://maps.googleapis.com/maps/api/timezone/json";
 
