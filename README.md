@@ -22,7 +22,9 @@ The following sample will not describe in detail how to create or set up the app
 
 ## Funcional Requirements
 
+
 ## Non-functional Requirements
+
 
 ## Getting started
 
@@ -44,5 +46,5 @@ send (or resend) your invite.
 
 ## Clock Functionality
 
-The world clock functionality was added into the slackapp-events.js file so slackapp-registration.js remained unchanged while slackapp-command.js was not utlized. All filed in repository are needed for the app to run on the developer's side but only the event was editted as 
+The world clock functionality was added into the slackapp-events.js file so slackapp-registration.js remained unchanged while slackapp-command.js was not utlized. All files in repository are needed for the app to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to interact with the bot (compared to /command). 
 
