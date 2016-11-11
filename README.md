@@ -50,7 +50,7 @@ send (or resend) your invite. If you're already a member then simply log into th
  * When you’re ready, click Next.
  * Choose a password, then click Join team
 
-3. If the "myserverlessapp" is not visible, click the direct messages tab on the left to reveal it.
+3. If the "myserverlessapp" is not visible under direct messages, click the name/tab to be able to open up a conversation with it directly.
 
 The code does not need to be initiated client side. If running code to create your own serverless slack bot is required then a personal Google API is needed, along with IBM Bluemix credentials (for Cloudant and API Connect) and Slack API credentials. Extensive tutorial mentioned above and in references; impossible to carry over due to the quantity text and interactiveness of tutorial. 
 
