@@ -12,7 +12,9 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ */ 
+
+//OWN CODE STARTS HERE
 var async = require("async");
 var request = require("request");
 var googleApiKey = "Enter your API key here";
@@ -26,7 +28,7 @@ callDecision is called in main function*/
 
 function callDecision(address, token, channel, callback) {
     request({
-      //
+      //request get response from Google Geocode using address
       url: googleApiGeocode + "?address=" + address + "&key=" + googleApiKey,
       method: "GET",
       json: true
@@ -34,7 +36,6 @@ function callDecision(address, token, channel, callback) {
     }, function (err, response, body) {
         if (err) {
           return "broke";
-
           // If response cannot find any locations from input then print error message
         } else if (body.status === "ZERO_RESULTS") {
           postMessage(token, channel,
@@ -48,7 +49,9 @@ function callDecision(address, token, channel, callback) {
             var formattedAddress = body.results[0].formatted_address;
             var lat = body.results[0].geometry.location.lat;
             var lng = body.results[0].geometry.location.lng;
-            // Now make requests to check the time and send a message if it is an appropriate time to call
+            /* Now make requests to check the time and send a message if it is an appropriate time to call
+            *
+            */
             request({
                 method: "GET",
                 url: googleApiTimezone + "?location=" + lat + "," + lng + "&timestamp=1331161200" + "&key=" + googleApiKey,
@@ -86,6 +89,8 @@ function callDecision(address, token, channel, callback) {
         }
     });
 }
+// OWN CODE ENDS HERE (but editted some parts in 'reply to message' at the bottom to suit functionality)
+
 /**
  * Gets the details of a given user through the Slack Web API
  *
