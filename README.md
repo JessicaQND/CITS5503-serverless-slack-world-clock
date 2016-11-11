@@ -2,9 +2,7 @@
 
 This is the code for the CITS5503 - Cloud computing project for a serverless Slack app that tells the user if it is an appropriate time to call a certain location depending on the input address. The app is built with IBM Bluemix OpenWhisk, API Connect, Slack Events API and Google API.
 
-Slack app using Slack Events API to receive events, with IBM Bluemix OpenWhisk actions to process these events, and how to expose these actions with API Connect.
-
-The following sample will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp. The added world clock functionality was built on top of the serverless chat bot produced by the following the tutorial. Actions such as setting up Cloudant DB, deploying OpenWhisk actions and the actual creation of the Slack application are all explained in the adorementioned link.
+The following sample will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp. The serverless chat bot produced by following the tutorial could only echo the user's message and was essentially useless and only existed in order to demonstrate the serverless architecture; my added world clock functionality was built on top of that serverless chat bot. Actions such as setting up Cloudant DB, deploying OpenWhisk actions andhe actual creation of the Slack application are all explained in the adorementioned link.
 
 ## Overview
 
@@ -14,11 +12,10 @@ Built using IBM Bluemix, the app uses:
 
  * OpenWhisk - to implement the app bot and commands
  * Cloudant - to keep track of app installations
- * API Connect - to prove gateway/expose the OpenWhisk actions to Slack
+ * API Connect - to provide the gateway/expose the OpenWhisk actions to Slack
  * Slack Events API - streamlined, easy way to build apps and bots that respond to activities in Slack
  * Google Geocoding API - to find formatted address, lat and long to pass to Timezone API
  * Google Timezone API - to find the timezone of location
-
 
 ## Funcional Requirements
 * The system should allow any user in the Slack team it's deployed in to access it's direct message channel.
@@ -33,8 +30,7 @@ Built using IBM Bluemix, the app uses:
 * The client's user interface should be compatible with all commonly used browsers.
 * The system should be able to scale based on the number of users using the system.
 
-
-## Getting started
+## Instructions
 
 To access application, you will need to:
 
@@ -74,10 +70,11 @@ uncertain as to why such a problem existed.
 4. I had next to zero knowledge or experience in Javascript coding until about 2 weeks ago so logic and quality of code is very
 poor.
 
+## 
+
 ## References
 
-* https://github.com/IBM-Bluemix/openwhisk-slackapp - Most original files retained from this repository. Only  [slackapp-events.js]
-in actions was editted.
+* https://github.com/IBM-Bluemix/openwhisk-slackapp - Most original files retained from this repository. Only clock functionality was only added to [slackapp-events.js].
 * https://www.ibm.com/blogs/bluemix/2016/08/serverless-slack-app-with-bluemix-openwhisk/ - Simple overview of tutorial
 * https://api.slack.com/
 * https://developers.google.com/maps/documentation/geocoding/intro - Google Geocoding API site
