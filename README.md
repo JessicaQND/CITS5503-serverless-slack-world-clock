@@ -73,11 +73,8 @@ poor.
 ## Possible improvment
 
 * Adding more of an explanation for users as to what the bot actually does in the Slack app would make it less confusing for first time users e.g. having them initiate conversation by stating something along the line sof "Please enter a location and I will tell you if it is an appropriate time to call".
-
 * Make the response more personal by also stating the user's name.
-
 * Slack fixing their Events API so the bot doesn't appear away when it is online
-
 * OpenWhisk allowing ways to install external libraries
 
 ## References
