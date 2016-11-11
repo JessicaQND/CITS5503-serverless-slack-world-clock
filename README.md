@@ -60,6 +60,8 @@ Clock functionality was created using Google APIs in order to find the location 
 timezone of said location (timezoneID from Timezone API). This information was then, in turn, used to find out a string of the
 current time in that area and then converted into numbers in order to create the decision point for calling. Message is then posted back to the channel.
 
+<img src="xdocs/clock-functionality.png" width="800"/>
+
 ## Problems
 
 1. Openwhisk does not allow the installation of external libraries/packages. If the Timezone microJS library was able to be utilised
