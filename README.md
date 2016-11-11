@@ -50,7 +50,7 @@ send (or resend) your invite.
 
 ## Clock Functionality
 
-The world clock functionality was added into the [slackapp-events.js] file, which handles events triggered by the Events API so [slackapp-registration.js] remained unchanged while [slackapp-command.js] was not utlized. All files in repository are needed for the app to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to communicate with the bot (compared to /command).
+The world clock functionality was added into the [slackapp-events.js] file, which handles events triggered by the Events API;  [slackapp-registration.js] remained unchanged while [slackapp-command.js] was not utlized. All files in repository are needed for the application to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to communicate with the bot (compared to /command).
 
 Clock functionality was created using Google APIs in order to find the location of the address (lat, long from Geocodig API) and 
 timezone of said location (timezoneID from Timezone API). This information was then, in turn, used to find out a string of the
@@ -70,7 +70,15 @@ uncertain as to why such a problem existed.
 4. I had next to zero knowledge or experience in Javascript coding until about 2 weeks ago so logic and quality of code is very
 poor.
 
-## 
+## Possible improvment
+
+* Adding more of an explanation for users as to what the bot actually does in the Slack app would make it less confusing for first time users e.g. having them initiate conversation by stating something along the line sof "Please enter a location and I will tell you if it is an appropriate time to call".
+
+* Make the response more personal by also stating the user's name.
+
+* Slack fixing their Events API so the bot doesn't appear away when it is online
+
+* OpenWhisk allowing ways to install external libraries
 
 ## References
 
