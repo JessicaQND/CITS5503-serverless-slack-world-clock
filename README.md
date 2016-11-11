@@ -46,8 +46,21 @@ send (or resend) your invite.
 
 ## Clock Functionality
 
-The world clock functionality was added into the [slackapp-events.js] file so [slackapp-registration.js] remained unchanged while [slackapp-command.js] was not utlized. All files in repository are needed for the app to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to interact with the bot (compared to /command). 
+The world clock functionality was added into the [slackapp-events.js] file so [slackapp-registration.js] remained unchanged while [slackapp-command.js] was not utlized. All files in repository are needed for the app to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to communicate with the bot (compared to /command). 
 
+Clock functionality was created using Google APIs in order to find the location of the address (lat, long from Geocodig API) and 
+timezone of said location (timezoneID from Timezone API). This information was then, in turn, used to find out a string of the
+current time and then converted into numbers in order to create the decision point for calling. Message is then posted back to the channel.
+
+## Problems
+
+1. Openwhisk does not allow the installation of external libraries/packages. If the Timezone microJS library was able to be utilised
+the code would not look half as convoluted and ugly.
+
+2. when trying to make the added functionalities modular (passing lat, long from values returned by function involving GeocodeAPI to function involving timezone API to get timezone) Openwhisk will keep throwing up an error saying 'main is undefined' even
+though the 'main' function was always defined as it was legacy code pulled from github. This resulted in one big function.
+
+3. 
 ## References
 
 https://github.com/IBM-Bluemix/openwhisk-slackapp - Most original files retained from this repository. Only  [slackapp-events.js]
