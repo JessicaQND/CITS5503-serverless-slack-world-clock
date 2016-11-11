@@ -19,6 +19,7 @@ Built using IBM Bluemix, the app uses:
 
 The following sample will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp. The added world clock functionality was built on top of the serverless chat bot produced by the tutorial. Actions such as setting up Cloudant DB, deploying OpenWhisk actions and the actual creation of the app are all explained in the adorementioned link.
 
+
 ## Funcional Requirements
 
 ## Non-functional Requirements
@@ -41,5 +42,7 @@ send (or resend) your invite.
 
 3. If the "myserverlessapp" is not visible, click the direct messages tab on the left to reveal it.
 
-##
+## Clock Functionality
+
+The world clock functionality was added into the slackapp-events.js file so slackapp-registration.js remained unchanged while slackapp-command.js was not utlized. All filed in repository are needed for the app to run on the developer's side but only the event was editted as 
 
