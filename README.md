@@ -33,11 +33,11 @@ send (or resend) your invite.
 2. Accept invitation - Once you’ve been invited to join a Slack team, the first step is setting up your account. Just click the link
  in your email invitation to get started:
  
-  * Check your inbox for an invitation to join a Slack team.
-  * Click the Join button.
-  * On the signup page, enter your first and last name and choose a username.
-  * When you’re ready, click Next.
-  * Choose a password, then click Join team
+ * Check your inbox for an invitation to join a Slack team.  
+ * Click the Join button.
+ * On the signup page, enter your first and last name and choose a username.
+ * When you’re ready, click Next.
+ * Choose a password, then click Join team
 
 3. If the "myserverlessapp" is not visible, click the direct messages tab on the left to reveal it.
 
