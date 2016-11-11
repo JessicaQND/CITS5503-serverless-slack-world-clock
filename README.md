@@ -2,7 +2,7 @@
 
 This is the code for the CITS5503 - Cloud computing project for a serverless Slack app that tells the user if it is an appropriate time to call a certain location depending on the input address. The app is built with IBM Bluemix OpenWhisk, API Connect, Slack Events API and Google API.
 
-The following sample will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp. The serverless chat bot produced by following the tutorial could only echo the user's message and was essentially useless and only existed in order to demonstrate the serverless architecture; my added world clock functionality was built on top of that serverless chat bot. Actions such as setting up Cloudant DB, deploying OpenWhisk actions and the actual creation of the Slack application are all explained in the adorementioned link.
+The following sample will not describe in detail how to create or set up the application as a developer, as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp. The serverless chat bot produced by following the tutorial could only echo the user's message and was essentially useless, and only existed in order to demonstrate the serverless architecture; my added world clock functionality was built on top of that serverless chat bot. Actions such as setting up Cloudant DB, deploying OpenWhisk actions and the actual creation of the Slack application are all explained in the adorementioned link.
 
   <img src="xdocs/cloudant-adddesigndoc.png" width="280"/>
   <img src="xdocs/app-created.png" width="280"/>
