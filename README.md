@@ -39,7 +39,7 @@ Built using IBM Bluemix, the app uses:
 To access application, you will need to:
 
 1. Get in touch with a Team Admin - If you haven’t received an invitation yet, contact an Administrator on the team and ask them to 
-send (or resend) your invite.
+send (or resend) your invite. If you're already a member then simply log into the "CLoud-demo" slack team.
 
 2. Accept invitation - Once you’ve been invited to join a Slack team, the first step is setting up your account. Just click the link
  in your email invitation to get started:
