@@ -4,6 +4,10 @@ This is the code for the CITS5503 - Cloud computing project for a serverless Sla
 
 The following sample will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp. The serverless chat bot produced by following the tutorial could only echo the user's message and was essentially useless and only existed in order to demonstrate the serverless architecture; my added world clock functionality was built on top of that serverless chat bot. Actions such as setting up Cloudant DB, deploying OpenWhisk actions and the actual creation of the Slack application are all explained in the adorementioned link.
 
+  <img src="xdocs/cloudant-adddesigndoc.png" width="200"/>
+  <img src="xdocs/app-created.png" width="200"/>
+  <img src="xdocs/apiconnect-findendpoint.png" width="200"/>
+
 ## Overview
 
 When a user installs the app in a Slack team or interacts with a bot user, Slack calls the app implementation and talks to an API deployed with API Connect. In turn this API will invoke OpenWhisk actions. From the perspective of the developer of the Slack app, there is no server involved: only OpenWhisk actions and an API in API Connect. Furthermore if no user interacts with the app then the code will not run.
