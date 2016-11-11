@@ -71,8 +71,8 @@ current time in that area and then converted into numbers in order to create the
 the code would not look half as convoluted and ugly.
 
 2. When trying to make the added functionalities modular (passing lat, long from values returned by function involving GeocodeAPI to function involving timezone API to get timezone) Openwhisk will keep throwing up an error saying 'main is undefined' even
-though the 'main' function was always defined as it was legacy code pulled from github. This resulted in one big function but
-uncertain as to why such a problem existed.
+though the 'main' function was always defined as it was legacy code pulled from github. This resulted in one big function but it is
+uncertain as to why such a problem existed in the first place.
 
 3. Originall when calling the clock function in the post message section further down the script, the application would take far too long to respond. Therefore, the post message function needed to be called in the actual clock function. Ultimately, the order was flipped. This problem may have been the result of the legacy code and Javascript being asynchronous.
 
