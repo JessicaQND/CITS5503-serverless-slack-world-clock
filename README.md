@@ -1,11 +1,12 @@
 # CITS5503-serverless-slack-world-clock
 
-This is the code for CITS5503 - Cloud computing project for a serverless Slack app that tells the user if it is an appropriate time
-to call a certain location depending on the input address. The app is built with IBM Bluemix OpenWhisk, API Connect and Slack Events API. 
+This is the code for the CITS5503 - Cloud computing project for a serverless Slack app that tells the user if it is an appropriate time to call a certain location depending on the input address. The app is built with IBM Bluemix OpenWhisk, API Connect, Slack Events API and Google API.
 
-When a user installs the app in a Slack team or interacts with a bot user, Slack calls the app implementation and talks to an API deployed with API Connect. In turn this API will invoke OpenWhisk actions. From the perspective of the developer of the Slack app, there is no server involved: only OpenWhisk actions and an API in API Connect. Furthermore if no user interacts with the app then the code will not run.
+The following will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp
 
 ## Overview
+
+When a user installs the app in a Slack team or interacts with a bot user, Slack calls the app implementation and talks to an API deployed with API Connect. In turn this API will invoke OpenWhisk actions. From the perspective of the developer of the Slack app, there is no server involved: only OpenWhisk actions and an API in API Connect. Furthermore if no user interacts with the app then the code will not run.
 
 Built using IBM Bluemix, the app uses:
 
