@@ -58,8 +58,7 @@ The code does not need to be initiated client side. If running code to create yo
 
 The world clock functionality was added into the [slackapp-events.js] file, which handles events triggered by the Events API, in the actions folder;  [slackapp-registration.js] remained unchanged while [slackapp-command.js] was not utlized. All files in repository are needed for the application to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to communicate with the bot (compared to /command).
 
-Clock functionality was created using Google APIs in order to find the location of the address (lat, long from Geocodig API) and 
-timezone of said location (timezoneID from Timezone API). This information was then, in turn, used to find out a string of the
+This clock functionality was created using Google APIs in order to find the location of the address (lat, long from Geocoding API) and timezone of said location (timezoneID from Timezone API). This information was then, in turn, used to find out a string of the
 current time in that area and then converted into numbers in order to create the decision point for calling. Message is then posted back to the channel.
 
 *Example scenario*
