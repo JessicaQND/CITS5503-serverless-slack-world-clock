@@ -80,7 +80,7 @@ uncertain as to why such a problem existed in the first place.
 
 3. Originall when calling the clock function in the post message section further down the script, the application would take far too long to respond. Therefore, the post message function needed to be called in the actual clock function. Ultimately, the order was flipped. This problem may have been the result of the legacy code and Javascript being asynchronous.
 
-4. I had next to zero knowledge or experience in Javascript coding until about 2 weeks ago so logic and quality of code is very
+4. I had next to zero knowledge or experience in Javascript until about 2 weeks ago so logic and quality of code is very
 poor.
 
 ## Possible improvment
