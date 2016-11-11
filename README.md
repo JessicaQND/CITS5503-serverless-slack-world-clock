@@ -71,17 +71,18 @@ uncertain as to why such a problem existed.
 
 3. Originall when calling the clock function in the post message section further down the script, the application would take far too long to respond. Therefore, the post message function needed to be called in the actual clock function. Ultimately, the order was flipped. This problem may have been the result of the legacy code and Javascript being asynchronous.
 
-4. I had next to zero knowledge or experience in Javascript coding until about 2 weeks ago.
+4. I had next to zero knowledge or experience in Javascript coding until about 2 weeks ago so logic and quality of code is very
+poor.
 
 ## References
 
-https://github.com/IBM-Bluemix/openwhisk-slackapp - Most original files retained from this repository. Only  [slackapp-events.js]
+*https://github.com/IBM-Bluemix/openwhisk-slackapp - Most original files retained from this repository. Only  [slackapp-events.js]
 in actions was editted.
-https://www.ibm.com/blogs/bluemix/2016/08/serverless-slack-app-with-bluemix-openwhisk/ - Simple overview of tutorial\
-https://api.slack.com/
-https://developers.google.com/maps/documentation/geocoding/intro - Google Geocoding API site
-https://developers.google.com/maps/documentation/timezone/start - Google Time Zone API site
-http://www.w3schools.com/jsref/jsref_tolocaletimestring.asp - toLocaleTimeString
-https://msdn.microsoft.com/library/474de325(v=vs.94).aspx - toLocaleTimeString
+*https://www.ibm.com/blogs/bluemix/2016/08/serverless-slack-app-with-bluemix-openwhisk/ - Simple overview of tutorial
+*https://api.slack.com/
+*https://developers.google.com/maps/documentation/geocoding/intro - Google Geocoding API site
+*https://developers.google.com/maps/documentation/timezone/start - Google Time Zone API site
+*http://www.w3schools.com/jsref/jsref_tolocaletimestring.asp - toLocaleTimeString
+*https://msdn.microsoft.com/library/474de325(v=vs.94).aspx - toLocaleTimeString
 
 
