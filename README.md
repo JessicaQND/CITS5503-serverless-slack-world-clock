@@ -4,9 +4,9 @@ This is the code for the CITS5503 - Cloud computing project for a serverless Sla
 
 The following sample will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp. The serverless chat bot produced by following the tutorial could only echo the user's message and was essentially useless and only existed in order to demonstrate the serverless architecture; my added world clock functionality was built on top of that serverless chat bot. Actions such as setting up Cloudant DB, deploying OpenWhisk actions and the actual creation of the Slack application are all explained in the adorementioned link.
 
-  <img src="xdocs/cloudant-adddesigndoc.png" width="200"/>
-  <img src="xdocs/app-created.png" width="200"/>
-  <img src="xdocs/apiconnect-findendpoint.png" width="200"/>
+  <img src="xdocs/cloudant-adddesigndoc.png" width="280"/>
+  <img src="xdocs/app-created.png" width="280"/>
+  <img src="xdocs/apiconnect-findendpoint.png" width="280"/>
 
 ## Overview
 
@@ -63,7 +63,7 @@ current time in that area and then converted into numbers in order to create the
 <img src="xdocs/clock-functionality.png" width="950"/>
 <img src="xdocs/Old-events.png" width="500"/>
 
-Original slackeventsapp.js in order to compare
+*Original 'post message' section in slackeventsapp.js for easy comparision with added clock functionality in current slackeventsapp.js
 
 ## Problems
 
