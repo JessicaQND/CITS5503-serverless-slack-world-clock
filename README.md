@@ -52,7 +52,7 @@ send (or resend) your invite.
 
 3. If the "myserverlessapp" is not visible, click the direct messages tab on the left to reveal it.
 
-The code does not need to be initiated client side. If running code to create your own serverless slack bot is required then an personal Google API is needed, along with IBM Bluemix credentials (for Cloudant and API Connect) and Slack Api credentials. Extensive tutorial mentioned above; impossible to carry over due to the large text and interactiveness. 
+The code does not need to be initiated client side. If running code to create your own serverless slack bot is required then an personal Google API is needed, along with IBM Bluemix credentials (for Cloudant and API Connect) and Slack Api credentials. Extensive tutorial mentioned above and in references; impossible to carry over due to the quantity text and interactiveness of tutorial. 
 
 ## Clock Functionality
 
