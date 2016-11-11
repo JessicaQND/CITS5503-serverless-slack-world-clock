@@ -14,9 +14,10 @@
  * limitations under the License.
  */ 
 
-//OWN CODE STARTS HERE
 var async = require("async");
 var request = require("request");
+
+//OWN CODE STARTS HERE
 var googleApiKey = "Enter your API key here";
 var googleApiGeocode = "https://maps.googleapis.com/maps/api/geocode/json";
 var googleApiTimezone = "https://maps.googleapis.com/maps/api/timezone/json";
@@ -28,7 +29,7 @@ callDecision is called in main function*/
 
 function callDecision(address, token, channel, callback) {
     request({
-      //request get response from Google Geocode using address
+      //request get response from Google GeocodingAPI using address
       url: googleApiGeocode + "?address=" + address + "&key=" + googleApiKey,
       method: "GET",
       json: true
@@ -49,24 +50,30 @@ function callDecision(address, token, channel, callback) {
             var formattedAddress = body.results[0].formatted_address;
             var lat = body.results[0].geometry.location.lat;
             var lng = body.results[0].geometry.location.lng;
+            
             /* Now make requests to check the time and send a message if it is an appropriate time to call
-            *
+            * request get response from Google TimeZoneAPI using location coordinates of lat, lng
             */
             request({
                 method: "GET",
                 url: googleApiTimezone + "?location=" + lat + "," + lng + "&timestamp=1331161200" + "&key=" + googleApiKey,
                 json: true
+                
             }, function(err, response, body) {
                 if (err) {
                     return "error";
-                //
+                // If response is ok then create a time string of current location (using timezone) in 24hr format
+                   Split the string at the hours part
                 } else if (body && body.status === "OK") {
                     var timeZoneId =  body.timeZoneId;
                     var now = new Date();
                     var locationTime = now.toLocaleTimeString('en-US', { timeZone: timeZoneId, hour12: false });
                     var splitLocationTime = locationTime.split(':');
+                    // Convert string to number in order to perform an if/else comparision as a decision point
                     var hours = Number(splitLocationTime[0]);
+                   // Set time between 7am-9pm as appropriate time to call and anything outside boundaries as inappropriate time to call
                     if (hours <= 7 || hours >= 21) {
+                        // Post message back to channel consisting of formatted address, current time and decision
                         var message = "The time in " + formattedAddress + " is " + locationTime + ", it is not an appropriate time to call!";
                     } else {
                         var message = "The time in " + formattedAddress + " is " + locationTime + ", it is a good time to call.";
@@ -77,19 +84,20 @@ function callDecision(address, token, channel, callback) {
                         callback(err);
                       });
                 } else if (body && !body.status !== "OK") {
-                    return 'Some sort of error :s';
+                    return 'Error';
                 }
             });
         } else if (body && !body.status !== "OK") {
           // callback(body.status);
-          return "response but not ok";
+          return "Response is not OK";
         } else {
           // callback("unknown response");
-          return "wow broken response";
+          return "Broken response";
         }
     });
 }
 // OWN CODE ENDS HERE (but editted some parts in 'reply to message' at the bottom to suit functionality)
+
 
 /**
  * Gets the details of a given user through the Slack Web API
