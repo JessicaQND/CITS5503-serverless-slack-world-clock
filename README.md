@@ -13,11 +13,11 @@ Built using IBM Bluemix, the app uses:
 * OpenWhisk - to implement the app bot and commands
 * Cloudant - to keep track of app installations
 * API Connect - to expose the OpenWhisk actions to Slack
-* Slack Events API
-* Google Geocoding API
-* Google Timezone API
+* Slack Events API - streamlined, easy way to build apps and bots that respond to activities in Slack
+* Google Geocoding API - to find formatted address, lat and long to pass to Timezone API
+* Google Timezone API - to find the timezone of location
 
-The following will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp
+The following sample will not describe in detail how to create or set up the application as a developer as that is explained in: https://github.com/IBM-Bluemix/openwhisk-slackapp. The added world clock functionality was built on top of the serverless chat bot produced by the tutorial. Actions such as setting up Cloudant DB, deploying OpenWhisk actions and the actual creation of the app are all explained in the adorementioned link.
 
 ## Funcional Requirements
 
