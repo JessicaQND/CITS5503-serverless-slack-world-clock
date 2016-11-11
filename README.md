@@ -52,6 +52,8 @@ send (or resend) your invite.
 
 3. If the "myserverlessapp" is not visible, click the direct messages tab on the left to reveal it.
 
+The code does not need to be initiated client side. If running code to create your own serverless slack bot is required then an personal Google API is needed, along with IBM Bluemix credentials (for Cloudant and API Connect) and Slack Api credentials. Extensive tutorial mentioned above; impossible to carry over due to the large text and interactiveness. 
+
 ## Clock Functionality
 
 The world clock functionality was added into the [slackapp-events.js] file in actions folder, which handles events triggered by the Events API;  [slackapp-registration.js] remained unchanged while [slackapp-command.js] was not utlized. All files in repository are needed for the application to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to communicate with the bot (compared to /command).
