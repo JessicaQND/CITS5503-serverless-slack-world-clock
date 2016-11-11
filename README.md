@@ -1,4 +1,4 @@
-# CITS5503-serverless-slack-world-clock
+# CITS5503-serverless-slack-world-clock-app
 
 This is the code for the CITS5503 - Cloud computing project for a serverless Slack app that tells the user if it is an appropriate time to call a certain location depending on the input address. The app is built with IBM Bluemix OpenWhisk, API Connect, Slack Events API and Google API.
 
@@ -30,7 +30,7 @@ Built using IBM Bluemix, the app uses:
 
 * The system should maintain an easy to us interface accross all functionality and for all users.
 * The system should be able to return a response within 5 seconds.
-* The client's user interface should be compatible with al commonly used browsers.
+* The client's user interface should be compatible with all commonly used browsers.
 * The system should be able to scale based on the number of users using the system.
 
 
@@ -76,13 +76,13 @@ poor.
 
 ## References
 
-*https://github.com/IBM-Bluemix/openwhisk-slackapp - Most original files retained from this repository. Only  [slackapp-events.js]
+* https://github.com/IBM-Bluemix/openwhisk-slackapp - Most original files retained from this repository. Only  [slackapp-events.js]
 in actions was editted.
-*https://www.ibm.com/blogs/bluemix/2016/08/serverless-slack-app-with-bluemix-openwhisk/ - Simple overview of tutorial
-*https://api.slack.com/
-*https://developers.google.com/maps/documentation/geocoding/intro - Google Geocoding API site
-*https://developers.google.com/maps/documentation/timezone/start - Google Time Zone API site
-*http://www.w3schools.com/jsref/jsref_tolocaletimestring.asp - toLocaleTimeString
-*https://msdn.microsoft.com/library/474de325(v=vs.94).aspx - toLocaleTimeString
+* https://www.ibm.com/blogs/bluemix/2016/08/serverless-slack-app-with-bluemix-openwhisk/ - Simple overview of tutorial
+* https://api.slack.com/
+* https://developers.google.com/maps/documentation/geocoding/intro - Google Geocoding API site
+* https://developers.google.com/maps/documentation/timezone/start - Google Time Zone API site
+* http://www.w3schools.com/jsref/jsref_tolocaletimestring.asp - toLocaleTimeString
+* https://msdn.microsoft.com/library/474de325(v=vs.94).aspx - toLocaleTimeString
 
 
