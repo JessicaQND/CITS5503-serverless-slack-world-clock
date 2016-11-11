@@ -6,7 +6,7 @@ The following sample will not describe in detail how to create or set up the app
 
   <img src="xdocs/cloudant-adddesigndoc.png" width="280"/>
   <img src="xdocs/app-created.png" width="280"/>
-  <img src="xdocs/apiconnect-findendpoint.png" width="280"/>
+  <img src="xdocs/apiconnect-api-properties.png" width="280"/>
 
 ## Overview
 
