@@ -50,7 +50,7 @@ send (or resend) your invite.
 
 ## Clock Functionality
 
-The world clock functionality was added into the [slackapp-events.js] file, which handles events triggered by the Events API;  [slackapp-registration.js] remained unchanged while [slackapp-command.js] was not utlized. All files in repository are needed for the application to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to communicate with the bot (compared to /command).
+The world clock functionality was added into the [slackapp-events.js] file in actions folder, which handles events triggered by the Events API;  [slackapp-registration.js] remained unchanged while [slackapp-command.js] was not utlized. All files in repository are needed for the application to run on the developer's side but only the event was editted to provide extra functionality as it was the most interactive way to communicate with the bot (compared to /command).
 
 Clock functionality was created using Google APIs in order to find the location of the address (lat, long from Geocodig API) and 
 timezone of said location (timezoneID from Timezone API). This information was then, in turn, used to find out a string of the
@@ -79,7 +79,7 @@ poor.
 
 ## References
 
-* https://github.com/IBM-Bluemix/openwhisk-slackapp - Tutorial followed - built basic severless Slack app. Most original files retained from this repository but they're needed to run the app developer side. Clock functionality was only added to [slackapp-events.js].
+* https://github.com/IBM-Bluemix/openwhisk-slackapp - Tutorial followed - built basic severless Slack app. Most original files retained from this repository but they're needed to run the app developer side. Clock functionality was only added to [slackapp-events.js] in actions folder.
 * https://www.ibm.com/blogs/bluemix/2016/08/serverless-slack-app-with-bluemix-openwhisk/ - Simple overview of tutorial
 * https://api.slack.com/
 * https://developers.google.com/maps/documentation/geocoding/intro - Google Geocoding API site
