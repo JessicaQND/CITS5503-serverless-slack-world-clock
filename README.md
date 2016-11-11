@@ -79,7 +79,7 @@ poor.
 
 ## References
 
-* https://github.com/IBM-Bluemix/openwhisk-slackapp - Most original files retained from this repository. Only clock functionality was only added to [slackapp-events.js].
+* https://github.com/IBM-Bluemix/openwhisk-slackapp - Tutorial followed - built basic severless Slack app. Most original files retained from this repository but they're needed to run the app developer side. Clock functionality was only added to [slackapp-events.js].
 * https://www.ibm.com/blogs/bluemix/2016/08/serverless-slack-app-with-bluemix-openwhisk/ - Simple overview of tutorial
 * https://api.slack.com/
 * https://developers.google.com/maps/documentation/geocoding/intro - Google Geocoding API site
