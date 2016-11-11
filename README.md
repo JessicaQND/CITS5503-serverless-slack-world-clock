@@ -61,7 +61,9 @@ timezone of said location (timezoneID from Timezone API). This information was t
 current time in that area and then converted into numbers in order to create the decision point for calling. Message is then posted back to the channel.
 
 <img src="xdocs/clock-functionality.png" width="950"/>
-<img src="xdocs/Old-events.png" width="950"/>
+<img src="xdocs/Old-events.png" width="500"/>
+
+Original slackeventsapp.js in order to compare
 
 ## Problems
 
